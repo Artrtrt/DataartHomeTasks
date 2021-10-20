@@ -22,7 +22,7 @@ public class ReverseInteger {
             reverseNumber += inputNumber % 10;
             inputNumber /= 10;
         }
-        if (inputNumber >= -2147483648 || inputNumber <= 2147483647) {
+        if (reverseNumber >= -2147483648 || reverseNumber <= 2147483647) {
             return (int) reverseNumber;
         } else {
             throw new MyException("Введено число, которое не может быть конвертировано");
